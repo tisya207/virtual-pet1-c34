@@ -15,7 +15,7 @@ function setup() {
   
   database = firebase.database();
   console.log(database);
-  foodStock = database.ref('/');
+  foodStock = database.ref('food');
   foodStock.on("value",readStock);
 
   
@@ -37,7 +37,7 @@ function draw() {
     writeStock(foodS)
     dog.changeAnimation("happyDog", happyDog)
   }
-
+text("press up arrow key to feed drago", 200,50)
   
 
 }
