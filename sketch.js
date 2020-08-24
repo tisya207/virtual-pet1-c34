@@ -32,12 +32,15 @@ function draw() {
   drawSprites();
   //add styles here
 
-  if(keyWentDown(UP_ARROW)){
+  if(keyIsDown(UP_ARROW)){
     console.log(foodS)
     writeStock(foodS)
     dog.changeAnimation("happyDog", happyDog)
   }
+  fill("red")
+textSize(20)
 text("press up arrow key to feed drago", 200,50)
+
   
 
 }
@@ -61,10 +64,7 @@ foodS = data.val();
 console.log(foodS)
 }
 
-function keyPressed(){
-  
- 
-  }
+
 
   
 
